@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.maincontainer {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+
+}
+
+/* navbar */
+.navbar {
+    width: 25%;
+    height: 100%;
+    background-color: #040B14;
+    color: white;
+    text-align: center;
+    position: fixed;
+}
+
+
+
+/* image */
+.manimage img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 8px solid #2C2F3F;
+    margin: 15px auto;
+}
+
+/* name */
+.name h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+.elham{
+    display: none;
+}
+
+/* logos */
+.logos i {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    border-radius: 50%;
+    padding-right: 25px;
+    margin-bottom: 20px;
+
+}
+
+/* elements */
+.elements .home {
+    display: flex;
+    align-items: center;
+    padding: 12px 35px;
+    margin-bottom: 8px;
+    
+}
+
+.home i {
+    /* color: rgb(20, 157, 221); */
+    font-size: 24px;
+    padding-right: 15px;
+    color: white;
+}
+.Home{
+    color: white;
+}
+.home a{
+    text-decoration: none;
+}
+
+
+/* navbar footer */
+.navbarfooter p {
+    margin-top: 30px;
+}
+
+
+/* body */
+.body {
+    width: 75%;
+    height: 100vh;
+    height: 800px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+/* backgroundimage */
+.backgroundimage {
+    width: 100%;
+    /* height: 800px; */
+    height: 100vh;
+    background-image: url("https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/hero-bg.jpg");
+    
+    /* background-position: center; */
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    /* margin: auto; */
+    padding-left: 10vw;
+    /* padding-bottom: 290px; */
+}
+
+.text h1 {
+    font-size: 64px;
+    color: white;
+    margin: 0 0 10px;
+}
+
+.text p {
+    font-size: 26px;
+    color: white;
+    margin: 0 0 50px;
+}
+
+/* .typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    font-size: 1.6rem;
+    width: 0;
+} */
+
+/* About */
+.about {
+    width: 100%;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.about h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: rgb(23, 59, 108);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+/* two box */
+.twoboxes {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin-top: 45px;
+    padding: 15px;
+}
+
+/* box1 */
+.box1 {
+    flex-basis: 25%;
+}
+
+.box1 img {
+    width: 100%;
+    height: 313px;
+}
+
+/* box2 */
+.box2 {
+    flex-basis: 65%;
+}
+
+.box2 h3 {
+    font-size: 30px;
+    margin: 0 0 8px;
+    color: #173B6C;
+}
+
+.box2 p {
+    font-size: 20px;
+    margin: 0 0 16px;
+    font-style: italic;
+}
+
+/* birthdaybox */
+.birthdaybox {
+    width: 100%;
+    display: flex;
+    gap: 45px;
+}
+
+/* birthday */
+.birt1 {
+    padding-bottom: 15px;
+}
+
+@media (width<1000px) {
+    .twoboxes {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .box1 {
+        flex-basis: 100%;
+    }
+
+    .party {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (width<600px) {
+    .elements .home {
+        padding: 12px 8px;
+    }
+
+    .home i {
+        font-size: 14px;
+        padding-right: 7px;
+    }
+
+    .logos i {
+        font-size: 14px;
+        padding-right: 4px;
+    }
+
+    .manimage img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .navbarfooter p {
+        margin-top: 30px;
+        font-size: small;
+    }
+
+    .birthdaybox {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .course1 {
+        flex-basis: 100%;
+    }
+
+    .fourcourses {
+        flex-direction: column;
+        gap: 0px;
+
+    }
+    .navbar {
+        width: 20%;
+    }
+    .body {
+        width: 80%;
+    }
+}
+
+@media(width<429px){
+    .manimage img {
+        width: 65px;
+        height: 65px;
+    }
+    .navbarfooter p {
+        font-size: 10px;
+    }
+}
+
+@media (width<990px){
+    .logos i {
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 50%;
+        padding-right: 6px;
+        margin-bottom: 20px;
+    }
+}
+@media (width<700px){
+    .hamza{
+        display: none;
+    }
+    .elham{
+        display: block;
+    }
+    .logos{
+        display: none;
+    }
+    .Home{
+        display: none;
+    }
+    .elements .home {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+/* 4 boxes */
+
+/* box 1 */
+.tool1 {
+    display: flex;
+}
+
+.emoji i {
+    font-size: 50px;
+    color: #149DDD;
+}
+
+.head {
+    margin-left: 15px;
+}
+
+.head h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #050d18;
+}
+
+.happyclient {
+    color: #122F57;
+    font-weight: 600;
+}
+
+.container1 {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* 4 course */
+.html {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.level {
+    height: 10px;
+    width: 100%;
+    background-color: #149DDD;
+    margin-bottom: 15px;
+}
+
+.fourcourses {
+    padding: 15px;
+    display: flex;
+    gap: 35px;
+}
+
+.course1 {
+    flex-basis: 45%;
+}
+
+/* summary */
+.party {
+    display: flex;
+}
+
+.summary {
+    padding-left: 15px;
+}
+
+.summary h3 {
+    font-weight: 900;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.summary h4,
+.summary p,
+.summary ul {
+    padding-left: 20px;
+}
+
+.summary h4 {
+    margin: 0 0 10px;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+.summary button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 13px 18px;
+    display: inline-block;
+    font-weight: 600;
+    border: none;
+}
+
+.firstimagee img {
+    width: 235px;
+    /* width: 100%; */
+    height: 235px;
+    border-radius: 14px;
+}
+
+.nineimages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* padding-left: 20px; */
+    padding-left: 0px;
+    margin-top: 40px;
+}
+
+.firstimagee {
+    flex-basis: 27%;
+}
+
+.bags i {
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #149DDD;
+    color: white;
+}
+
+.bagelements h3 {
+    padding-bottom: 10px;
+}
+
+.elements1 {
+    display: flex;
+    gap: 25px;
+    margin: 8px;
+}
+
+.cards6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.heroes {
+    flex-basis: 27%;
+    margin-bottom: 20px;
+}
+
+/* 3 mans  */
+
+.threemans {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.firstman {
+    flex-basis: 27%;
+    margin: 15px;
+    text-align: center;
+}
+
+.firstman p {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 12px;
+    padding: 25px 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+.firstman img {
+    margin: 25px 0px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.firstman h3 {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 10px 0px 5px;
+}
+
+.firstman h4 {
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+}
+
+/* Map */
+.map {
+    flex-basis: 48%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 30px;
+}
+
+.location {
+    display: flex;
+    gap: 20px;
+
+}
+
+.icon i {
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #3B9DE1;
+    background-color: #DFF3FC;
+}
+
+.eleicon h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+
+.eleicon p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+iframe {
+    margin-top: 18px;
+    width: 100%;
+}
+
+/* Contact Box */
+.contact {
+    flex-basis: 48%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 30px;
+}
+
+.cold {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 17px;
+}
+
+.yourname {
+    flex-basis: 48%;
+}
+
+.yourname p {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+input {
+    outline-color: #419EE0;
+    padding: 15px;
+    height: 44px;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.subject {
+    margin-top: 15px;
+}
+
+.subject p {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.message {
+    margin-top: 15px;
+}
+
+.message p {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+textarea {
+    outline-color: #419EE0;
+    padding: 15px;
+    width: 100%;
+    height: 250px;
+    border: 1px solid gray;
+}
+
+/* button */
+.buttonsss {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.buttonsss button {
+    font-size: 18px;
+    color: white;
+    background-color: #149ddd;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+}
+
+.father {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+
+
+
+
+
+
+@media (width<1035px){
+        .firstman {
+            flex-basis: 45%;
+            /* justify-content: start; */
+            margin: 15px;
+            text-align: center;
+        }
+        .map {
+            flex-basis: 100%;
+            margin: 15px;
+        }
+        .contact {
+            flex-basis: 100%;
+            margin: 15px;
+        }
+
+}
+
+@media (width < 840px){
+    .firstman {
+        flex-basis: 100%;
+        /* justify-content: start; */
+        margin: 15px;
+        text-align: center;
+    }
+    }
+
+@media (width<1300px) {
+    .heroes {
+        flex-basis: 50%;
+        margin-left: 0px;
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(width<400px) {
+    .home i {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+
+    .Home {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+
+    .summary {
+        padding-left: 0px;
+    }
+}
+
+@media (width<810px) {
+    .heroes {
+        flex-basis: 100%;
+        /* margin-left: 0px; */
+        /* padding-left: 30px; */
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (width<700px){
+    .cold {
+        width: 100%;
+        display: block;
+        gap: 17px;
+    }
+    .yourname p {
+        font-size: 16px;
+        padding-bottom: 8px;
+        padding-top: 10px;
+    }
+}
+@media (width < 400px){
+    .contact {
+        margin: 0px;
+    
+    }
+}
+
